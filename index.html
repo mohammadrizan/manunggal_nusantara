@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Showcase - Portfolio Highlight</title>
+    <title>Activity Showcase - Portfolio Highlight</title>
 
-    <!-- Google Fonts for warm, cheerful typography -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Open Graph Tags for LinkedIn -->
-    <meta property="og:title" content="Event Showcase - Highlights & Gallery">
-    <meta property="og:description" content="A cheerful, context-rich showcase of key event highlights and responsibilities.">
+    <meta property="og:title" content="Activity Showcase - Highlights & Gallery">
+    <meta property="og:description"
+        content="A detailed, aesthetic showcase of activity highlights and key responsibilities.">
     <meta property="og:image" content="images/photo1.jpg">
 
     <style>
         :root {
-            /* Warm, cheerful & inviting palette */
-            --bg-color: #fbf7f0;           /* Soft warm cream background */
-            --card-bg: #ffffff;           /* Crisp warm white card surface */
-            --header-bg: #fff6eb;         /* Light sunny peach/cream gradient start */
-            --text-main: #2b2521;         /* Warm deep charcoal for readability */
-            --text-muted: #6b6057;        /* Soft warm taupe for body text */
-            
-            --accent-warm: #e06d53;       /* Cheerful terracotta coral */
-            --accent-gold: #f2a649;       /* Vibrant sunny honey gold */
-            --accent-soft: #fcefe6;       /* Gentle coral tint for badges */
-            --border-color: #eee5d8;      /* Delicate warm border line */
-            
-            --shadow-sm: 0 4px 20px rgba(180, 140, 100, 0.08);
-            --shadow-hover: 0 12px 30px rgba(180, 140, 100, 0.15);
-            --radius: 18px;
+            /* Muted, cozy, aesthetic warm earth tones */
+            --bg-color: #f4f0eb;
+            /* Soft warm oatmeal background */
+            --card-bg: #ffffff;
+            /* Clean warm white surface */
+            --header-bg: #eae3da;
+            /* Soft muted warm sand gradient */
+            --text-main: #2e2a27;
+            /* Deep warm charcoal for legibility */
+            --text-muted: #6b645d;
+            /* Soft earthy taupe */
+
+            --accent-warm: #b8624b;
+            /* Muted terra-cotta clay (rich, soft, not bright) */
+            --accent-amber: #be8447;
+            /* Warm muted amber / sand */
+            --accent-soft: #ede6dd;
+            /* Gentle warm neutral badge fill */
+            --border-color: #e3dcd3;
+            /* Subtle organic border line */
+
+            --shadow-sm: 0 4px 18px rgba(120, 100, 85, 0.06);
+            --shadow-hover: 0 10px 28px rgba(120, 100, 85, 0.12);
+            --radius: 16px;
         }
 
         * {
@@ -56,7 +69,7 @@
         /* Top Category Label */
         .top-tag {
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: 700;
@@ -65,26 +78,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
         }
 
-        .top-tag::before, .top-tag::after {
+        .top-tag::before,
+        .top-tag::after {
             content: "";
             display: inline-block;
-            width: 24px;
+            width: 22px;
             height: 2px;
-            background-color: var(--accent-gold);
+            background-color: var(--accent-amber);
             border-radius: 2px;
+            opacity: 0.7;
         }
 
         /* Hero Header */
         header {
-            background: linear-gradient(135deg, #fff7ee 0%, #fef3e2 100%);
+            background: linear-gradient(135deg, #f0e9e1 0%, #e6ded3 100%);
             border: 1px solid var(--border-color);
-            padding: 45px 35px;
+            padding: 42px 32px;
             border-radius: var(--radius);
             text-align: center;
-            margin-bottom: 35px;
+            margin-bottom: 32px;
             box-shadow: var(--shadow-sm);
             position: relative;
             overflow: hidden;
@@ -96,24 +111,24 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--accent-warm), var(--accent-gold));
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-warm), var(--accent-amber));
         }
 
         header h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             font-weight: 700;
             letter-spacing: -0.5px;
             color: var(--text-main);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         header .subtitle {
             color: var(--accent-warm);
             font-weight: 600;
-            font-size: 1.05rem;
-            margin-bottom: 15px;
+            font-size: 1.02rem;
+            margin-bottom: 16px;
         }
 
         .meta-badges {
@@ -127,12 +142,12 @@
         .badge {
             background: var(--card-bg);
             color: var(--text-main);
-            padding: 7px 18px;
+            padding: 6px 16px;
             border-radius: 30px;
-            font-size: 0.88rem;
+            font-size: 0.86rem;
             font-weight: 600;
             border: 1px solid var(--border-color);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
             display: inline-flex;
             align-items: center;
             gap: 6px;
@@ -146,33 +161,33 @@
         .overview-card {
             background: var(--card-bg);
             border-radius: var(--radius);
-            padding: 32px;
+            padding: 30px;
             border: 1px solid var(--border-color);
             box-shadow: var(--shadow-sm);
-            margin-bottom: 35px;
+            margin-bottom: 32px;
         }
 
         .overview-card h2 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--accent-warm);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .overview-card p {
             color: var(--text-muted);
-            font-size: 1rem;
-            line-height: 1.75;
+            font-size: 0.98rem;
+            line-height: 1.7;
         }
 
-        /* Contextual Image Section (Stacked Editorial Flow) */
+        /* Contextual Image Section (Stacked Editorial Stream) */
         .showcase-stream {
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 28px;
         }
 
         .context-block {
@@ -208,9 +223,9 @@
         .image-container {
             position: relative;
             overflow: hidden;
-            background-color: #f4eee5;
+            background-color: #eee9e2;
             cursor: pointer;
-            min-height: 260px;
+            min-height: 250px;
         }
 
         .image-container img {
@@ -227,31 +242,31 @@
 
         .image-badge {
             position: absolute;
-            top: 15px;
-            left: 15px;
-            background: rgba(255, 255, 255, 0.9);
+            top: 14px;
+            left: 14px;
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(6px);
             color: var(--accent-warm);
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
             padding: 4px 12px;
             border-radius: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
 
         .text-content {
-            padding: 30px;
+            padding: 28px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         .text-content .step-number {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 700;
-            color: var(--accent-gold);
+            color: var(--accent-amber);
             text-transform: uppercase;
             letter-spacing: 1.5px;
             margin-bottom: 6px;
@@ -259,15 +274,15 @@
 
         .text-content h3 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--text-main);
-            margin-bottom: 12px;
-            line-weight: 600;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .text-content p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.94rem;
             line-height: 1.65;
         }
 
@@ -279,18 +294,18 @@
 
         .text-content ul li {
             position: relative;
-            padding-left: 20px;
-            margin-bottom: 8px;
+            padding-left: 18px;
+            margin-bottom: 6px;
             color: var(--text-muted);
-            font-size: 0.92rem;
+            font-size: 0.9rem;
         }
 
         .text-content ul li::before {
             content: "✦";
             position: absolute;
             left: 0;
-            color: var(--accent-gold);
-            font-size: 0.85rem;
+            color: var(--accent-amber);
+            font-size: 0.8rem;
             top: 1px;
         }
 
@@ -302,7 +317,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(43, 37, 33, 0.88);
+            background: rgba(46, 42, 39, 0.88);
             backdrop-filter: blur(8px);
             z-index: 1000;
             justify-content: center;
@@ -314,7 +329,7 @@
             max-width: 90%;
             max-height: 85vh;
             border-radius: 12px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
             border: 2px solid #ffffff;
         }
 
@@ -330,37 +345,44 @@
 
         footer {
             text-align: center;
-            margin-top: 55px;
+            margin-top: 50px;
             padding-top: 20px;
             border-top: 1px solid var(--border-color);
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        
-        <div class="top-tag">Professional Event Showcase</div>
+
+        <div class="top-tag">M. Shahrukh Rizan</div>
 
         <!-- HERO HEADER -->
         <header>
-            <h1>Global Innovators Summit</h1>
-            <div class="subtitle">Lead Event Coordinator & Operations Specialist</div>
-            
+            <h1>Coding Activity at Sekolah Manunggal Nusantara</h1>
+            <div class="subtitle">Koding Next Batam</div>
+
             <div class="meta-badges">
-                <div class="badge"><span>📅</span> October 2026</div>
-                <div class="badge"><span>📍</span> San Francisco, CA</div>
-                <div class="badge"><span>👥</span> 500+ Attendees</div>
+                <div class="badge"><span>📅</span> April 2025</div>
+                <div class="badge"><span>📍</span> Sekolah Manunggal Nusantara</div>
+                <div class="badge"><span>🌿</span> Hands-on Engagement</div>
             </div>
         </header>
 
-        <!-- PROJECT OVERVIEW CARD -->
+        <!-- ACTIVITY OVERVIEW CARD -->
         <div class="overview-card">
-            <h2><span>🌟</span> Event Summary & Objective</h2>
+            <h2><span>🌿</span> Activity Overview & Goal</h2>
             <p>
-                Conceptualized and executed a high-impact multi-track innovation summit bringing together tech pioneers, startup founders, and industry leaders. Below is a detailed walkthrough of the key project phases and operational highlights.
+                Inspiring Young Innovators: Bringing Coding to Sekolah Manunggal Nusantara
+
+                As part of Koding Next Batam’s mission to make technology accessible to young learners, our academic
+                team led a dynamic, hands-on coding workshop at Sekolah Manunggal Nusantara. Designed for primary
+                students from Grades 1 to 6, this initiative introduced fundamental computer science principles through
+                age-appropriate, highly engaging activities—bridging the gap between creative play and computational
+                logic.
             </p>
         </div>
 
@@ -370,14 +392,15 @@
             <!-- ITEM 1 (Landscape Image + Context) -->
             <div class="context-block">
                 <div class="image-container" onclick="openLightbox('images/photo1.jpg')">
-                    <span class="image-badge">Phase 01</span>
-                    <img src="images/photo1.jpg" alt="Keynote Stage & Opening Session" onerror="this.src='https://placehold.co/700x480/fff6eb/e06d53?text=Photo+1:+Keynote+Stage'">
+                    <!-- <span class="image-badge">Phase 01</span> -->
+                    <img src="images/photo1.jpg" alt="Activity Setup & Preparation"
+                        onerror="this.src='https://placehold.co/700x480/eae3da/b8624b?text=Photo+1:+Preparation'">
                 </div>
                 <div class="text-content">
-                    <div class="step-number">01 / Keynote & Stage Production</div>
-                    <h3>Opening Session & Keynote Launch</h3>
+                    <div class="step-number">01</div>
+                    <h3>Age-Differentiated Learning Pathways</h3>
                     <p>
-                        Managed full stage setup, lighting, sound engineering, and seamless presenter transitions for the morning opening keynote with over 500 live attendees.
+                        Structured tailored learning modules across all primary levels (Grades 1–6), ensuring concepts were accessible, progressive, and engaging for both lower and upper primary students.
                     </p>
                 </div>
             </div>
@@ -385,33 +408,31 @@
             <!-- ITEM 2 (Portrait Image + Context - Reversed Layout) -->
             <div class="context-block reverse">
                 <div class="image-container" onclick="openLightbox('images/photo2.jpg')">
-                    <span class="image-badge">Phase 02</span>
-                    <img src="images/photo2.jpg" alt="Interactive Workshop & Discussion" onerror="this.src='https://placehold.co/480x640/fff6eb/f2a649?text=Photo+2:+Workshop+Session'">
+                    <!-- <span class="image-badge">Phase 02</span> -->
+                    <img src="images/photo2.jpg" alt="Facilitating Group Session"
+                        onerror="this.src='https://placehold.co/480x640/eae3da/be8447?text=Photo+2:+Facilitation'">
                 </div>
                 <div class="text-content">
-                    <div class="step-number">02 / Interactive Tracks</div>
-                    <h3>Breakout Workshops & Facilitation</h3>
+                    <div class="step-number">02</div>
+                    <h3>Screen-Free "Unplugged" Computational Logic</h3>
                     <p>
-                        Coordinated 6 parallel breakout sessions. Ensured facilitators had proper AV equipment, interactive voting tools, and live audience Q&A support.
+                        Introduced core programming concepts—such as algorithms, sequencing, and pattern recognition—to younger students using tactile, screen-free "unplugged" activities that built foundational critical thinking before touching a computer.
                     </p>
-                    <ul>
-                        <li>Synchronized multi-room time schedules</li>
-                        <li>Facilitated live audience polling tech</li>
-                    </ul>
                 </div>
             </div>
 
             <!-- ITEM 3 (Landscape Image + Context) -->
             <div class="context-block">
                 <div class="image-container" onclick="openLightbox('images/photo3.jpg')">
-                    <span class="image-badge">Phase 03</span>
-                    <img src="images/photo3.jpg" alt="Networking Lounge & Brand Booths" onerror="this.src='https://placehold.co/700x480/fff6eb/e06d53?text=Photo+3:+Networking+Lounge'">
+                    <!-- <span class="image-badge">Phase 03</span> -->
+                    <img src="images/photo3.jpg" alt="Hands-on Practice & Demonstration"
+                        onerror="this.src='https://placehold.co/700x480/eae3da/b8624b?text=Photo+3:+Hands-on+Practice'">
                 </div>
                 <div class="text-content">
-                    <div class="step-number">03 / Guest Experience</div>
-                    <h3>Networking Hub & Sponsor Exhibition</h3>
+                    <div class="step-number">03</div>
+                    <h3>Interactive Project-Based Coding with Scratch</h3>
                     <p>
-                        Designed and supervised the central networking hall, sponsor booths, and refreshment stations to foster active engagement among guests and speakers.
+                        Guided upper primary classes through hands-on block-based coding in Scratch, helping students build their first interactive animations and mini-games while applying loop constructs and conditional logic.
                     </p>
                 </div>
             </div>
@@ -419,14 +440,15 @@
             <!-- ITEM 4 (Portrait/Landscape Image + Context - Reversed Layout) -->
             <div class="context-block reverse">
                 <div class="image-container" onclick="openLightbox('images/photo4.jpg')">
-                    <span class="image-badge">Phase 04</span>
-                    <img src="images/photo4.jpg" alt="VIP Panel Discussion" onerror="this.src='https://placehold.co/480x640/fff6eb/f2a649?text=Photo+4:+Panel+Discussion'">
+                    <!-- <span class="image-badge">Phase 04</span> -->
+                    <img src="images/photo4.jpg" alt="Group Reflection & Discussion"
+                        onerror="this.src='https://placehold.co/480x640/eae3da/be8447?text=Photo+4:+Discussion'">
                 </div>
                 <div class="text-content">
-                    <div class="step-number">04 / Leadership Panel</div>
-                    <h3>Executive Roundtable Discussions</h3>
+                    <div class="step-number">04</div>
+                    <h3>Gamified Collaborative Problem-Solving</h3>
                     <p>
-                        Curated private executive roundtables for sponsors and guest speakers, managing tight VIP schedules and hospitality requirements flawlessly.
+                        Facilitated team-based logic challenges and interactive debugging games that encouraged students to troubleshoot problems together, fostering active participation and teamwork.
                     </p>
                 </div>
             </div>
@@ -434,14 +456,15 @@
             <!-- ITEM 5 (Landscape Image + Context) -->
             <div class="context-block">
                 <div class="image-container" onclick="openLightbox('images/photo5.jpg')">
-                    <span class="image-badge">Phase 05</span>
-                    <img src="images/photo5.jpg" alt="Closing Gala & Recognition" onerror="this.src='https://placehold.co/700x480/fff6eb/e06d53?text=Photo+5:+Closing+Ceremony'">
+                    <!-- <span class="image-badge">Phase 05</span> -->
+                    <img src="images/photo5.jpg" alt="Activity Wrap-up & Feedback"
+                        onerror="this.src='https://placehold.co/700x480/eae3da/b8624b?text=Photo+5:+Wrap-up'">
                 </div>
                 <div class="text-content">
-                    <div class="step-number">05 / Event Wrap-up</div>
-                    <h3>Closing Ceremony & Attendee Feedback</h3>
+                    <div class="step-number">05</div>
+                    <h3>Sparking Early STEM Interest & Digital Literacy</h3>
                     <p>
-                        Concluded the summit with an awards presentation and live feedback collection, achieving a 96% positive attendee satisfaction score.
+                        Created an energetic, supportive environment that demystified technology, encouraging young minds to see computers not just as devices for consumption, but as creative tools for building the future.
                     </p>
                 </div>
             </div>
@@ -450,12 +473,12 @@
 
         <!-- FOOTER -->
         <footer>
-            <p>&copy; Portfolio Event Highlight • Created with Care</p>
+            <p>&copy; Rizan • Koding Next Batam</p>
         </footer>
 
     </div>
 
-    <!-- Lightbox Modal -->
+    <!-- LIGHTBOX MODAL -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close">&times;</span>
         <img id="lightbox-img" src="" alt="Full size preview">
@@ -475,4 +498,5 @@
     </script>
 
 </body>
+
 </html>
